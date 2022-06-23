@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       success: function(data, textStatus, request){
         console.log(data, textStatus, request);
       },
-      url: "forms/contact.php",
+      url: "/email",
       data: $data,
       success: after_form_submitted,
       dataType: "json",
