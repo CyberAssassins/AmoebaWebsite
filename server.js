@@ -61,6 +61,6 @@ app.post('/mail', function (req, res, next) {
 })
 
 // LISTEN FOR HTTP REQUESTS
-const listener = app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
