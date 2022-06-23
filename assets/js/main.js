@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       success: function(data, textStatus, request){
         console.log(data, textStatus, request);
       },
-      url: "https://Mail-Server.elipsion.repl.co/mail",
+      url: "forms/contact.php",
       data: $data,
       success: after_form_submitted,
       dataType: "json",
