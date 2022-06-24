@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       success: function(data, textStatus, request){
         console.log(data, textStatus, request);
       },
-      url: "/email",
+      url: "https://Mail-Server.elipsion.repl.co/mail",
       data: $data,
       success: after_form_submitted,
       dataType: "json",
@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function after_form_submitted(data) {
     if (data.result == "success") {
+      console.log('success')
       $("#contact-form").hide();
     } else {
       $("#error_message").append("<ul></ul>");
